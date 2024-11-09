@@ -25,7 +25,7 @@ let open=0;
 let openList=[];
 let counter=0;
 let counterEnd=0;
-
+let flag=false;
 
 function setColor(i)
 {
@@ -33,14 +33,38 @@ function setColor(i)
 	
 	if(open==2)
 	{
+		
 		if(colors[openList[0]]==colors[openList[1]])
 		{
+			flag=false;
 			cards[openList[0]].onclick = ()=>{};
 			cards[openList[1]].onclick = ()=>{};
 			open=0;
+			if(openList[0]==i || openList[1]==i)
+				flag=true;
 			openList.pop();
 			openList.pop();
 			counterEnd+=1;
+			
+			if(flag)
+			return;
+		}
+		else if(openList[1]==i)
+		{
+			cards[i].style.backgroundColor="var(--color1)";
+			openList.pop();
+			open-=1;
+			counter+=1;
+			return;
+		}
+		else if(openList[0]==i)
+		{
+			cards[i].style.backgroundColor="var(--color1)";
+			openList[0]=openList[1];
+			openList.pop();
+			open-=1;
+			counter+=1;
+			return;
 		}
 		else
 		{
