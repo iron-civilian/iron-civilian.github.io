@@ -158,6 +158,8 @@ header{
 	height: 25vh;
 	min-height: 160px;
 	overflow: hidden;
+	box-shadow: 0px 0px 5px 2px black;
+	opacity: 1;
 }
 
 
@@ -174,14 +176,18 @@ header{
 }
 
 .research_cards>div>p>a{
+	display: inline-block;
 	text-decoration: none;
 	color: #6e76df;
+	font-size: 1.1em;
+	border: var(--color3) solid 1px;
+	padding: 5px;
+	border-radius: 8px;
+	margin-top: 10px;
+	
 }
 
-.research_cards>div:hover{
-	box-shadow: 0px 0px 5px 2px black;
-	opacity: 1;	
-}
+
 
 .card_container{
 	display: grid;
@@ -413,7 +419,6 @@ header{
 		flex-direction: column;
 		height: auto;
 		width: 80vw;
-		opacity: 1;
 		box-shadow: 0px 0px 5px 2px black;
 	}
 	.research_cards>div>img{
