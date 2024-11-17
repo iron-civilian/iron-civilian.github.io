@@ -8,6 +8,11 @@
         src: url("./Bad_Script/BadScript-Regular.ttf");
 }
 
+@font-face{
+        font-family: mont;
+        src: url("./Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
 
 :root {
   --color1: #2a2438;
@@ -21,7 +26,7 @@ body{
 	margin: 0px;
 	background-color:var(--color1); 
 	color: var(--color4);
-	font-family: helvetica;
+	font-family: mont,helvetica;
         box-sizing: border-box;
         overflow-x: hidden;
 }
@@ -44,7 +49,8 @@ header{
 	border: var(--color3) solid 1px;
 	border-radius: 8px;
 	cursor: pointer;
-	margin-top: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	
 }
 
@@ -102,7 +108,7 @@ header{
 }
 
 .grid_container > div{
-	height: 500px;
+	min-height: 500px;
 	min-width: 385px;
 	max-width: 400px;
 	
@@ -156,7 +162,7 @@ header{
 	width: 60vw;
 	max-width: 800px;
 	height: 25vh;
-	min-height: 160px;
+	min-height: 180px;
 	overflow: hidden;
 	box-shadow: 0px 0px 5px 2px black;
 	opacity: 1;
@@ -349,7 +355,7 @@ header{
 }
 
 .game>img{
-	height: 60%;
+	width: 75%;
 }
 
 .contact_me>img{
@@ -425,6 +431,9 @@ header{
 		max-height: 200px;
 		margin: auto;
 		margin-top: 20px;
+	}
+	.game>img{
+		width: 80%;
 	}
 }
 
