@@ -340,8 +340,10 @@ header{
 
 	font-family: bellota;
 	font-style: none;
+	padding: 0px 2px;
 	padding-top: 30px;
 	padding-bottom: 10px;
+	
 	
 	font-size: 1.3em;
 	
@@ -433,7 +435,7 @@ header{
 		margin-top: 20px;
 	}
 	.game>img{
-		width: 80%;
+		width: 75%;
 	}
 }
 
