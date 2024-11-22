@@ -20,38 +20,45 @@
 <a href="contact.html"><p class="contact nocurrent">Contact</p></a>
 </nav>
 
-<h1 id="gallery">photos <i class="fa-regular fa-image"></i></h1>
 
-<div id="wrapper">
-      <div id="carousel">
-        <div id="content">
-          <img class="item" src="vodka_me.png"/>
-          <img class="item" src="vodka_me.png"/>
-          <img class="item" src="vodka_me.png"/>
-          <img class="item" src="vodka_me.png"/>
-          <img class="item" src="vodka_me.png"/>
-          <img class="item" src="vodka_me.png"/>
-          <img class="item" src="vodka_me.png"/>
-          <img class="item" src="vodka_me.png"/>
-          <img class="item" src="vodka_me.png"/>
-        </div>
-      </div>
+<div class="slideshow-container">
+
+ 
+  <div class="mySlides fade">
+    
+    <div class="img_cnt">
+    <img src="https://media.istockphoto.com/id/485371557/photo/twilight-at-spirit-island.jpg?s=612x612&w=0&k=20&c=FSGliJ4EKFP70Yjpzso0HfRR4WwflC6GKfl4F3Hj7fk=">
+    </div>
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="img_cnt">
+    <img src="https://t4.ftcdn.net/jpg/04/30/46/87/360_F_430468753_hjeCITV6815pAztrEiOyElhwCao4v6XS.jpg">
+    </div>
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="img_cnt">
+    <img src="https://media.istockphoto.com/id/1473666403/photo/deep-forest-waterfall-in-thailand-erawan-waterfall-national-park-kanjanaburi-thailand.jpg?s=612x612&w=0&k=20&c=weBEF1fecZcspR3wqZz79ZmH4fnauLTqy9A4xEb8xi4=">
+    </div>
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
-<div class="gallery_button">
-<button id="prev">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path fill="none" d="M0 0h24v24H0V0z" />
-          <path fill="#2a2438" stroke="#2a2438" d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
-        </svg>
-</button>
-<button id="next">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path fill="none" d="M0 0h24v24H0V0z" />
-          <path fill="#2a2438" stroke="#2a2438" d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
-        </svg>
-</button>
-</div>
 
 
 <script src="random.js"></script>

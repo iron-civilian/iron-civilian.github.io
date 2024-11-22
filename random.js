@@ -1,57 +1,47 @@
-const gap = 16;
+let slideIndex = 1;
+showSlides(slideIndex);
 
-const carousel = document.getElementById("carousel"),
-  content = document.getElementById("content"),
-  next = document.getElementById("next"),
-  prev = document.getElementById("prev");
+// Next/previous controls
+function plusSlides(n=1) {
+  showSlides(slideIndex += n);
+}
 
-next.addEventListener("click", e => {
-  carousel.scrollBy(width + gap, 0);
-  
-});
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-carousel.addEventListener("scroll", e => {
-  if (carousel.scrollLeft == 0) {
-    prev.style.display = "none";
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-  else if (carousel.scrollLeft+width == carousel.scrollWidth) {
-    next.style.display = "none";
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
   }
-  else
-  {
-  	prev.style.display="flex";
-  	next.style.display="flex";
-  }
- 
-});
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 
-
-prev.addEventListener("click", e => {
-  carousel.scrollBy(-(width + gap), 0);
-});
-
-window.addEventListener("load", (e) => {
-  if (carousel.scrollLeft == 0) {
-    prev.style.display = "none";
-    next.style.display="flex";
-  }
-  else if (carousel.scrollLeft+width == carousel.scrollWidth) {
-    next.style.display = "none";
-    prev.style.display = "flex";
-  }
-  else
-  {
-  	prev.style.display="flex";
-  	next.style.display="flex";
-  	
+function showSlides2() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   
-});
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  slideIndex++;
+  setTimeout(showSlides2, 3500); // Change image every 3.5 seconds
+}
 
-
-
-
-
-let width = carousel.offsetWidth;
-window.addEventListener("resize", e => (width = carousel.offsetWidth));
+showSlides2();
 
