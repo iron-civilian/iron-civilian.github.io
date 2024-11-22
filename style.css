@@ -41,8 +41,8 @@ header{
 }
 
 header>img{
-	width: 35px;
-	height: 35px;
+	width: 45px;
+	height: 45px;
 	display: none;
 }
 
@@ -516,7 +516,7 @@ header>img{
 @media screen and (max-width: 800px){
 	.nav1{
 		flex-direction: column;
-		max-height: 0px;
+		max-height: 205px;
 		overflow: hidden;
 	  	transition: max-height 0.2s ease-out;
 	}
@@ -528,7 +528,13 @@ header>img{
 	
 	.nav1 p{
 		width: 100vw;
+		border-width: 1px 0px 0px 0px;
 	}
+	
+	.nav1 .contact{
+		border-width: 1px 0px 1px 0px;
+	}
+	
 	.grid_container{
 		grid-template-columns: auto;
 	}
