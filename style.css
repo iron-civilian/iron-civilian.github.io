@@ -40,6 +40,15 @@ header{
 	height: 150px;
 }
 
+header>img{
+	width: 35px;
+	height: 35px;
+	display: none;
+}
+
+
+
+
 #cv{
 	color: #6e76df;
 	background-color: var(--color1);
@@ -507,8 +516,15 @@ header{
 @media screen and (max-width: 800px){
 	.nav1{
 		flex-direction: column;
+		max-height: 0px;
+		overflow: hidden;
+	  	transition: max-height 0.2s ease-out;
 	}
 	
+	header>img{
+		display: block;
+	}
+
 	
 	.nav1 p{
 		width: 100vw;

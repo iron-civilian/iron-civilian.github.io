@@ -1,8 +1,3 @@
-const CVbut=document.getElementById("cv");
-
-CVbut.onclick=function(){
-	window.open("mycv.pdf","_blank");
-}
 
 const navbar=document.getElementsByClassName("nav1")[0];
 const menu=document.getElementsByClassName("menu")[0];
