@@ -341,6 +341,57 @@ header>img{
 	
 }
 
+
+.contact_me>div{
+	display: grid;
+	grid-template-columns: 15% 85%;
+	column-gap: 0px;
+	row-gap: 30px;
+	align-items: center;
+	margin-top: 40px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto; 
+	
+}
+
+.contact_me>img{
+	height:auto;
+	width: 100%;
+}
+
+.icon{
+	text-align: center;
+}
+
+.icon>a{
+	color: var(--color4);
+}
+
+.icon>a:hover{
+	color: #6e76df;
+}
+
+
+
+.griditem>p{
+	margin: 0px;
+	margin-left: 20px;
+	padding-right: 0px;
+	 
+}
+
+.griditem{
+	
+	word-wrap: break-word;
+}
+
+.contact_me i{
+	font-size: 2em;
+}
+
+
+
 .game{
 	text-align: center;
 }
@@ -369,32 +420,22 @@ header>img{
 	width: 75%;
 }
 
-.contact_me>img{
-	height:auto;
-	width: 100%;
-}
 
-.contact_me>div{
-	height: 30%;
-	width: 80%;
-	margin-top: 40px;
-	margin-left: auto;
-	margin-right: auto;
-}
 
+
+
+
+
+/*
 .contact_me>div>div{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+*/
 
-.contact_me i{
-	font-size: 2em;
-}
 
-.contact_me p{
-	margin-left: 20px;
-}
+
 
 
 
@@ -543,7 +584,11 @@ header>img{
 	}
 	.contact_me{
 		min-width: 90vw;
+		max-width: 100%;
 		height: 60vh;
+	}
+	.icon>a{
+		color: #6e76df;
 	}
 	
 	.card_container{
