@@ -392,11 +392,11 @@ header>img{
 
 
 
-.game{
+.fractal,.game{
 	text-align: center;
 }
 
-.game>h3{
+.fractal>h3,.game>h3{
 
 	font-family: bellota;
 	font-style: none;
@@ -416,11 +416,16 @@ header>img{
 	text-decoration: none;
 }
 
+.fractal a{
+	color: var(--color4);
+}
+
+
 .game>img{
 	width: 75%;
 }
 
-.game>.fractal_img{
+.fractal>.fractal_img{
 	width: 60%;
 }
 
@@ -566,7 +571,7 @@ header>img{
 		display: block;
 	}
 	
-	.game>p{
+	.fractal>p,.game>p{
 		padding: 0px 10px;
 	}
 
