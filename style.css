@@ -420,9 +420,9 @@ header>img{
 	width: 75%;
 }
 
-
-
-
+.game>.fractal_img{
+	width: 60%;
+}
 
 
 
@@ -565,6 +565,11 @@ header>img{
 	header>img{
 		display: block;
 	}
+	
+	.game>p{
+		padding: 0px 10px;
+	}
+
 
 	
 	.nav1 p{
