@@ -409,6 +409,9 @@ header>img{
 	font-size: 1.3em;
 	
 }
+.fractal>p{
+	margin: 0px 20px;
+}
 
 .game a{
 	display:block;
