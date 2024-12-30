@@ -477,7 +477,8 @@ header>img{
 }
 
 .mySlides img{
-	transform: scale(1);
+	height: 100%;
+	width: auto;
 }
 
 /* Next & previous buttons */
@@ -555,7 +556,34 @@ header>img{
   to {opacity: 1}
 }
 
+.bigpics{
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	word-wrap: break-word;
+	border: var(--color4) solid 2px;
+}
 
+.bigpics img{
+	width:30%;
+	display: inline;
+	padding: 20px 20px;
+	
+}
+
+.bigpics p{
+	display: inline-block;
+	width: 70%;
+	margin: 0px;
+	padding: 20px 0px;
+	
+	font-size: 1.5em;
+}
+
+.bigpics a{
+	text-decoration: none;
+	color: #6e76df;
+}
 
 
 
@@ -643,8 +671,33 @@ header>img{
 		
 	}
 	.mySlides img{
-		transform: scale(1);
+		width: 100%;
+		height: auto;
 	}
+	
+	.bigpics{
+		flex-direction: column;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		word-wrap: break-word;
+		border: var(--color4) solid 2px;
+	}
+
+	.bigpics img{
+		width: auto;
+		display: inline;
+		padding: 20px 20px;
+		
+	}
+
+	.bigpics p{
+		
+		width: auto;
+		padding: 0px 10px;
+		padding-bottom: 20px;
+		font-size: 1em;
+	}
+
 }
 
 
