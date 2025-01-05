@@ -558,27 +558,83 @@ header>img{
 
 .bigpics{
 	display: flex;
+	margin: auto;
+	width: 95%;
+	background-color: hsl(258 21.7% 10%);
 	margin-top: 10px;
 	margin-bottom: 10px;
-	word-wrap: break-word;
-	border: var(--color4) solid 2px;
+	box-shadow: 0px 0px 8px 2px black;
+}
+
+.bigpics>.img_post{
+	display: inline-block;
+	width: 35%;
+	border: 1px var(--color4) solid;
 }
 
 .bigpics img{
-	width:30%;
+	width:100%;
 	display: inline;
-	padding: 20px 20px;
+	padding: 0px 0px;
+
+	
+}
+.post_head{
+	height: 60px;
+	padding: 0px 20px;
+	display: flex;
+}
+.post_head>img{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	margin-top: 10px;
+	
+}
+.post_head>p>span{
+	color: var(--color3);
+}
+
+.user_post{
+	display: inline-block;
+	margin-top: 10px;
+	padding-left: 10px;
+}
+
+.post_foot{
+	margin-top: 10px;
+	margin-bottom: 25px;
+	padding: 0px 20px;
 	
 }
 
-.bigpics p{
+
+.post_foot>svg{
+	padding-right: 15px;	
+}
+.react{
+	fill: var(--color4);
+}
+.love_react{
+	stroke: var(--color4);
+	fill: hsl(258 21.7% 10%);
+	cursor: pointer;
+}
+
+
+
+
+.bigpics>p{
 	display: inline-block;
-	width: 70%;
-	margin: 0px;
-	padding: 20px 0px;
-	
+	color: var(--color3) ;
+	width: 60%;
+	margin: auto;
+	padding: 0px 0px;
+	word-break: break-word;
 	font-size: 1.5em;
 }
+
 
 .bigpics a{
 	text-decoration: none;
@@ -679,21 +735,19 @@ header>img{
 		flex-direction: column;
 		margin-top: 10px;
 		margin-bottom: 10px;
-		word-wrap: break-word;
-		border: var(--color4) solid 2px;
+		border: 1px var(--color4) solid;
 	}
-
-	.bigpics img{
-		width: auto;
-		display: inline;
-		padding: 20px 20px;
-		
+	
+	.bigpics>.img_post{
+		width: 100%;
+		border: none;
 	}
+	
+	
 
-	.bigpics p{
-		
+	.bigpics>p{
 		width: auto;
-		padding: 0px 10px;
+		padding: 0px 20px;
 		padding-bottom: 20px;
 		font-size: 1em;
 	}
