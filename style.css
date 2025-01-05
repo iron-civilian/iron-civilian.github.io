@@ -648,17 +648,6 @@ header>img{
 
 
 @media screen and (max-width: 800px){
-	*{
-		
-	    -webkit-tap-highlight-color: transparent;
-	    -webkit-touch-callout: none;
-	    -webkit-user-select: none;
-	    -khtml-user-select: none;
-	    -moz-user-select: none;
-	    -ms-user-select: none;
-	    user-select: none;	
-	}
-
 	.nav1{
 		flex-direction: column;
 		max-height: 205px;
