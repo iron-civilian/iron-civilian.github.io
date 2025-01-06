@@ -6,7 +6,6 @@ svgElement.addEventListener('click', () => {
       const pathElement = svgElement.querySelector('path');
       const currentFill = pathElement.style.fill;
       pathElement.style.fill = (currentFill == 'none' || currentFill == "") ? '#dbd8e3':'none';
-      console.log(currentFill);
     });
 
 menu.onclick=function(){

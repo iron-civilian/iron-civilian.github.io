@@ -736,6 +736,7 @@ header>img{
 		margin-top: 10px;
 		margin-bottom: 10px;
 		border: 1px var(--color4) solid;
+		box-shadow: none;
 	}
 	
 	.bigpics>.img_post{
