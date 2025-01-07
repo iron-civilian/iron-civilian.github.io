@@ -560,7 +560,7 @@ header>img{
 	display: flex;
 	margin: auto;
 	width: 95%;
-	background-color: hsl(258 21.7% 10%);
+	background-color: hsl(258 21.7% 6.5%);
 	margin-top: 10px;
 	margin-bottom: 10px;
 	box-shadow: 0px 0px 8px 2px black;
@@ -618,7 +618,7 @@ header>img{
 }
 .love_react{
 	stroke: var(--color4);
-	fill: hsl(258 21.7% 10%);
+	fill: hsl(258 21.7% 6.5%);
 	cursor: pointer;
 }
 
@@ -733,6 +733,7 @@ header>img{
 	
 	.bigpics{
 		flex-direction: column;
+		width: 90%;
 		margin-top: 10px;
 		margin-bottom: 10px;
 		border: 1px var(--color4) solid;
